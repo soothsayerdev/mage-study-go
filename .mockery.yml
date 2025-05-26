@@ -1,0 +1,9 @@
+all: True
+with-expecter: True
+recursive: True
+outpkg: "mocks"
+dir: "{{.InterfaceDir}}/mocks"
+log-level: "warn"
+packages:
+
+# ler documentaçao do mockery 
