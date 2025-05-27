@@ -1,6 +1,6 @@
 package dungeon
 
-import "mage-study/model"
+import "mage-study-go/model"
 
 type person interface {
 	Name() string

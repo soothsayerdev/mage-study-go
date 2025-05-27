@@ -1,6 +1,6 @@
 package dungeon
 
-import "mage-study/model"
+import "mage-study-go/model"
 
 type Mordor struct {
 	person person // dependencia injetada via interface, desacoplada de implementacoes concretas

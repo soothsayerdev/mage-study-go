@@ -1,6 +1,6 @@
 package person
 
-import "mage-study/model"
+import "mage-study-go/model"
 
 type Nazgul struct {
 	name  string
@@ -25,7 +25,7 @@ func (n *Nazgul) BagItens() []model.Item {
 	bag := make([]model.Item, 15)
 	for i, item := range n.items {
 		bag[i] = model.Item{
-			Name: item.Name(),
+			Name:  item.Name(),
 			Level: item.Level(),
 		}
 	}
