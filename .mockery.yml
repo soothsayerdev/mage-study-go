@@ -1,9 +1,16 @@
-all: True
-with-expecter: True
-recursive: True
-outpkg: "mocks"
-dir: "{{.InterfaceDir}}/mocks"
-log-level: "warn"
+all: false
+dir: internal/mocks
+filename: '{{.InterfaceName}}_mock.go'
+force-file-write: true
+formatter: goimports
+log-level: info
+structname: 'Mock{{.InterfaceName}}'
+pkgname: 'mocks'
+recursive: true
+require-template-schema-exists: true
+template: testify
+template-schema: '{{.Template}}.schema.json'
 packages:
-
-# ler documentaçao do mockery 
+  mage-study-go:
+    config:
+      all: true
